@@ -473,9 +473,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1680611607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf51174c6ab1f2a449878bf0f33fc33e, type: 3}
+  m_Script: {fileID: 11500000, guid: b1d76adab115a6e43be4cf5af231ef98, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClassworkBonus1_OLEVY
+  m_EditorClassIdentifier: Assembly-CSharp::L7_Logic_Conditionals_Reps_OLEVY
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

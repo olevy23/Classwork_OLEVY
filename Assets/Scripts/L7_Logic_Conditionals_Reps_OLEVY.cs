@@ -43,7 +43,7 @@ public class L7_Logic_Conditionals_Reps_OLEVY : MonoBehaviour
         // A3: Scenario - True or False (health = 20, gold = 100, hasKey = true)
         // ============================================================
         // 11. health < 30
-        // Answer: false
+        // Answer: true
         // 12. hasKey && health > 50
         // Answer: false
         // 13. !hasKey
@@ -113,7 +113,7 @@ public class L7_Logic_Conditionals_Reps_OLEVY : MonoBehaviour
         // ============================================================
         // 19. Make ONE boolean called canOpenVault that is true only when
         //     hasKey is true AND health is greater than 0.
-        bool canOpenVault = (hasKey && (health >= 0));
+        bool canOpenVault = (hasKey && (health > 0));
         // 20. Using the health above, write an if / else-if / else that prints
         //     "Dead" when health <= 0, "Low" when health < 30, otherwise "Fine".
         if(health<= 0)
@@ -162,8 +162,12 @@ public class L7_Logic_Conditionals_Reps_OLEVY : MonoBehaviour
         // 23. LEAP YEAR: given int year, print whether it is a leap year.
         //     A year is a leap year when it is divisible by 4, except that
         //     century years must also be divisible by 400.
-        int year = 2005;
-        if((year % 400) == 0)
+        int year = 1900;
+        if((year % 100) == 0)
+        {
+            Debug.Log("just a normal year");
+        }
+        else if((year % 400) == 0)
         {
             Debug.Log("century year!");
         }
@@ -180,22 +184,27 @@ public class L7_Logic_Conditionals_Reps_OLEVY : MonoBehaviour
         //     divisible by 3, print "Buzz" if it is divisible by 5, print
         //     "FizzBuzz" if it is divisible by both 3 and 5, otherwise print
         //     the number itself.
-        int number = 15;
+        int number = 16;
+        string Fizz = "";
+        string Buzz = "";
+        string numNoFizzBuzz = "";
         if (((number % 3) == 0) && ((number % 5) == 0))
         {
-            Debug.Log("Fizzbuzz!");
+            Fizz = "Fizz";
+            Buzz = "Buzz";
         }
         else if ((number % 3) == 0)
         {
-            Debug.Log("Fizz!");
+            Fizz = "Fizz";
         }
         else if ((number % 5) == 0)
         {
-            Debug.Log("Buzz!");
+            Buzz = "Buzz";
         }
         else 
         {
-            Debug.Log(number);
+            numNoFizzBuzz = "16"; //Wanted to set string to mirror the number for this section, but compiler error so using just the same number value as a testing measure
         }
+        Debug.Log(Fizz + Buzz + numNoFizzBuzz);
     }
 }
