@@ -188,16 +188,16 @@ public class L7_Logic_Conditionals_Reps_OLEVY : MonoBehaviour
         string Fizz = "";
         string Buzz = "";
         string numNoFizzBuzz = "";
-        if (((number % 3) == 0) && ((number % 5) == 0))
+        if (number % 3 == 0 && number % 5 == 0)
         {
             Fizz = "Fizz";
             Buzz = "Buzz";
         }
-        else if ((number % 3) == 0)
+        else if (number % 3 == 0)
         {
             Fizz = "Fizz";
         }
-        else if ((number % 5) == 0)
+        else if (number % 5 == 0)
         {
             Buzz = "Buzz";
         }
